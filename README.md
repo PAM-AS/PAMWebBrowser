@@ -9,7 +9,9 @@ Web browser for iOS, intended to be used inside apps
 
 To run the example project; clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Screenshot
+
+![Screenshot](http://cl.ly/image/3c0F432p1808/screenshot.png)
 
 ## Installation
 
