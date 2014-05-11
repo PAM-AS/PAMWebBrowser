@@ -1,5 +1,7 @@
 # PAMWebBrowser
 
+Web browser for iOS, intended to be used inside apps
+
 [![Version](http://cocoapod-badges.herokuapp.com/v/PAMWebBrowser/badge.png)](http://cocoadocs.org/docsets/PAMWebBrowser)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/PAMWebBrowser/badge.png)](http://cocoadocs.org/docsets/PAMWebBrowser)
 
