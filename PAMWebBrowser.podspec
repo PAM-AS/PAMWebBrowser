@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'PAMWebBrowser'
-  s.version      = '0.1.11'
+  s.version      = '0.1.12'
   s.license      =  'MIT'
   s.homepage     = 'https://github.com/PAM-AS/WebBrowser'
   s.authors      =  {'Thomas S. Nielsen' => 'thomas@pam.no'}
