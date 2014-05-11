@@ -16,14 +16,14 @@ Web browser for iOS, intended to be used inside apps
 
 ![Screenshot](http://cl.ly/image/3c0F432p1808/screenshot.png)
 
-## Usage
+## Installation
 
 PAMWebBrowser is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile, then run `pod install`:
 
     pod "PAMWebBrowser"
 
-#Usage
+## Usage
 
 1. Import `UIViewController+BrowserIBAction.h`
 2. Call `[self showBrowser:nil];` or connect your button in IB.
