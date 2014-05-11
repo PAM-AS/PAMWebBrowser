@@ -16,10 +16,19 @@ it simply add the following line to your Podfile:
 
     pod "PAMWebBrowser"
 
+#Usage
+
+1. Import `UIViewController+BrowserIBAction.h`
+2. Call `[self showBrowser:nil];` or connect your button in IB.
+
+#todo
+
+* Make status bar collapse like in Safari
+* Forward + backward gestures
+
 ## Author
 
-thomassnielsen, me@thomassnielsen.com
-
+Thomas S. Nielsen ([@thomassnielsen](https://twitter.com/thomassnielsen), [thomas@pam.no](mailto:thomas@pam.no))
 ## License
 
 PAMWebBrowser is available under the MIT license. See the LICENSE file for more info.
