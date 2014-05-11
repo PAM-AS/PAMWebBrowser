@@ -34,4 +34,3 @@ Thomas S. Nielsen ([@thomassnielsen](https://twitter.com/thomassnielsen), [thoma
 ## License
 
 PAMWebBrowser is available under the MIT license. See the LICENSE file for more info.
-
