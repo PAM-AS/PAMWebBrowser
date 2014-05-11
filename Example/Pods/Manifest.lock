@@ -1,0 +1,17 @@
+PODS:
+  - PAMWebBrowser (0.1.11):
+    - SAMCategories
+  - SAMCategories (0.4.1)
+
+DEPENDENCIES:
+  - PAMWebBrowser (from `../`)
+
+EXTERNAL SOURCES:
+  PAMWebBrowser:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PAMWebBrowser: 6f932006cc1f1c31c5b0a622a4694351ba761e84
+  SAMCategories: 141c86a5bf56165c9232fda04c88b547bc1ad2b9
+
+COCOAPODS: 0.32.1
