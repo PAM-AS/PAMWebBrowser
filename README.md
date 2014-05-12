@@ -19,7 +19,7 @@ Web browser for iOS, intended to be used inside apps
 ## Installation
 
 PAMWebBrowser is available through [CocoaPods](http://cocoapods.org), to install
-it simply add the following line to your Podfile, then run `pod install`:
+it add the following line to your Podfile, then run `pod install`:
 
     pod "PAMWebBrowser"
 
