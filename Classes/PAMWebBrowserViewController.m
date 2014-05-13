@@ -249,7 +249,7 @@
     else
     {
         NSError *error = [[NSError alloc] init];
-        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"^(([a-zA-Z]{1})|([a-zA-Z]{1}[a-zA-Z]{1})|([a-zA-Z]{1}[0-9]{1})|([0-9]{1}[a-zA-Z]{1})|([a-zA-Z0-9][a-zA-Z0-9-_]{1,61}[a-zA-Z0-9]))\\.([a-zA-Z]{2,6}|[a-zA-Z0-9-]{2,30}\\.[a-zA-Z]{2,3})$" options:NSRegularExpressionCaseInsensitive error:&error];
+        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"^(([a-zA-Z]{1})|([a-zA-Z]{1}[a-zA-Z]{1})|([a-zA-Z]{1}[0-9]{1})|([0-9]{1}[a-zA-Z]{1})|([a-zA-Z0-9][a-zA-Z0-9-_]{1,61}[a-zA-Z0-9]))\\.([a-zA-Z]{2,6}|[a-zA-Z0-9-]{2,30}\\.[a-zA-Z]{2,3})/?$" options:NSRegularExpressionCaseInsensitive error:&error];
         if ([[regex matchesInString:urlString options:0 range:NSMakeRange(0, urlString.length)] count] > 0)
         {
 #if DEBUG
