@@ -94,7 +94,7 @@
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go"/>
+                                                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="go"/>
                                                             <connections>
                                                                 <outlet property="delegate" destination="HXb-Uu-lM6" id="Jph-xh-Jxn"/>
                                                             </connections>
