@@ -143,9 +143,12 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6B-c7-7oH">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6B-c7-7oH">
                                 <rect key="frame" x="0.0" y="980" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="x06-Xm-ZuV"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem title="Item" id="fXP-6F-9wz"/>
                                 </items>
@@ -162,6 +165,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="MIs-bc-7V6" secondAttribute="trailing" id="1cd-cw-tXR"/>
+                            <constraint firstItem="y6B-c7-7oH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4eV-GE-HJS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y6B-c7-7oH" secondAttribute="bottom" id="8bD-zh-Odm"/>
+                            <constraint firstAttribute="trailing" secondItem="y6B-c7-7oH" secondAttribute="trailing" id="Gn7-AB-K0P"/>
                             <constraint firstItem="pU2-Rz-FVN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gyd-GF-cKl"/>
                             <constraint firstAttribute="trailing" secondItem="c99-AG-HPw" secondAttribute="trailing" id="H2x-Bu-DLs"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="c99-AG-HPw" secondAttribute="bottom" id="K9h-tM-di5"/>
