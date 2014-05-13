@@ -32,6 +32,7 @@ it simply add the following line to your Podfile, then run `pod install`:
 
 * Make status bar collapse like in Safari
 * Forward + backward gestures
+* History and autocomplete
 
 ## Author
 
