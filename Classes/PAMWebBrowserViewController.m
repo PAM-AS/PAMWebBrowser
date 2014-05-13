@@ -8,6 +8,7 @@
 
 #import "PAMWebBrowserViewController.h"
 #import "NSString+SAMAdditions.h"
+#import "NJKWebViewProgressView.h"
 
 @interface PAMWebBrowserViewController ()
 
@@ -26,6 +27,9 @@
 @property (nonatomic, strong) IBOutlet UIToolbar *bottomToolbar;
 
 @property (nonatomic, strong) UIAlertView *alert;
+
+@property (nonatomic, strong) NJKWebViewProgress *progressProcy;
+@property (nonatomic, strong) IBOutlet NJKWebViewProgressView *progressView;
 
 @end
 
@@ -67,12 +71,23 @@
         self.bottomToolbar.hidden = YES;
     }
     [self.webView.scrollView setScrollIndicatorInsets:self.webView.scrollView.contentInset];
+    
+    self.progressProcy = [[NJKWebViewProgress alloc] init];
+    self.webView.delegate = self.progressProcy;
+    self.progressProcy.webViewProxyDelegate = self;
+    self.progressProcy.progressDelegate = self;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - NJKWebViewProgressDelegate
+-(void)webViewProgress:(NJKWebViewProgress *)webViewProgress updateProgress:(float)progress
+{
+    [self.progressView setProgress:progress animated:NO];
 }
 
 #pragma mark - rotation
@@ -186,6 +201,11 @@
     }
     
     return YES;
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+    
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView

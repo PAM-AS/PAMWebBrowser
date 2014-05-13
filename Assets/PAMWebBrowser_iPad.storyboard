@@ -150,15 +150,26 @@
                                     <barButtonItem title="Item" id="fXP-6F-9wz"/>
                                 </items>
                             </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIs-bc-7V6" customClass="NJKWebViewProgressView">
+                                <rect key="frame" x="0.0" y="44" width="768" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="EFN-cS-kK8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MIs-bc-7V6" secondAttribute="trailing" id="1cd-cw-tXR"/>
                             <constraint firstItem="pU2-Rz-FVN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gyd-GF-cKl"/>
                             <constraint firstAttribute="trailing" secondItem="c99-AG-HPw" secondAttribute="trailing" id="H2x-Bu-DLs"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="c99-AG-HPw" secondAttribute="bottom" id="K9h-tM-di5"/>
+                            <constraint firstItem="MIs-bc-7V6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Mko-M2-gCb"/>
                             <constraint firstItem="pU2-Rz-FVN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bR0-Ml-IOH"/>
                             <constraint firstItem="c99-AG-HPw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qot-TU-nZh"/>
                             <constraint firstAttribute="trailing" secondItem="pU2-Rz-FVN" secondAttribute="trailing" id="srd-ZY-1iM"/>
+                            <constraint firstItem="MIs-bc-7V6" firstAttribute="top" secondItem="pU2-Rz-FVN" secondAttribute="bottom" id="we6-WF-8Lu"/>
                             <constraint firstItem="c99-AG-HPw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xd3-HX-sb5"/>
                         </constraints>
                     </view>
@@ -168,6 +179,7 @@
                         <outlet property="bottomToolbar" destination="y6B-c7-7oH" id="SRB-18-gde"/>
                         <outlet property="doneButton" destination="9IJ-Yr-mTg" id="KBG-qX-chr"/>
                         <outlet property="forwardButton" destination="EcQ-HP-rXJ" id="Vo6-Hj-g1x"/>
+                        <outlet property="progressView" destination="MIs-bc-7V6" id="crf-Ch-khc"/>
                         <outlet property="reloadButton" destination="Yw9-y4-zIZ" id="RUK-55-kZj"/>
                         <outlet property="topToolbar" destination="pU2-Rz-FVN" id="3TS-NO-AUH"/>
                         <outlet property="topToolbarHeight" destination="SNh-mR-usG" id="I3b-X7-YoU"/>

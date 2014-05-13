@@ -18,5 +18,6 @@ Pod::Spec.new do |s|
 # Pod 
 
   s.dependency 'SAMCategories'
+  s.dependency 'NJKWebViewProgress'
   
 end

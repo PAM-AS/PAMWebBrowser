@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NJKWebViewProgress.h"
 
-@interface PAMWebBrowserViewController : UIViewController <UIWebViewDelegate, UITextFieldDelegate>
+@interface PAMWebBrowserViewController : UIViewController <UIWebViewDelegate, UITextFieldDelegate, NJKWebViewProgressDelegate>
 
 /* Options
  */
