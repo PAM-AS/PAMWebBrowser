@@ -190,7 +190,6 @@
 				E9B8F61119067D0B005836FD /* Frameworks */,
 				E9B8F61219067D0B005836FD /* Resources */,
 				48DC92FD00C0466A89680168 /* Copy Pods Resources */,
-				E947128A190BE67D006897B0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -292,19 +291,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		E947128A190BE67D006897B0 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "/bin/bash -e";
-			shellScript = "mdfind -onlyin \"${SRCROOT}\" \"kMDItemContentTypeTree == public.font\" -0 | sort -z | xargs -0 /usr/local/bin/moarfonts install";
 		};
 		F5F02E4EFFDF43ECBEE03ADB /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
