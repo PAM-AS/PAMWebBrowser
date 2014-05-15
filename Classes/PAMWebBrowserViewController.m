@@ -50,6 +50,8 @@
     if (!self.url)
         self.url = [NSURL URLWithString:@"http://google.com/"];
     
+    [[self.reloadButton titleLabel] setFont:[UIFont fontWithName:@"FontAwesome" size:self.reloadButton.titleLabel.font.pointSize]];
+    
     if (self.hidesDoneButton)
         self.doneButton.customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
     
