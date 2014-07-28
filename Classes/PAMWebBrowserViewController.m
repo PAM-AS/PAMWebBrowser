@@ -15,6 +15,8 @@
 @property (nonatomic, strong) IBOutlet UIToolbar *topToolbar;
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint *topToolbarHeight;
 @property (nonatomic, strong) IBOutlet UIBarButtonItem *urlFieldWrapperItem;
+@property (nonatomic, strong) IBOutlet UIView *urlFieldBg;
+@property (nonatomic, strong) UIColor *urlFieldDefaultBgColor;
 @property (nonatomic, strong) IBOutlet UITextField *urlField;
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint *urlFieldRightMargin;
 
@@ -49,6 +51,8 @@
     [super viewDidLoad];
     if (!self.url)
         self.url = [NSURL URLWithString:@"http://google.com/"];
+    
+    self.urlFieldDefaultBgColor = self.urlFieldBg.backgroundColor;
     
     [[self.reloadButton titleLabel] setFont:[UIFont fontWithName:@"FontAwesome" size:self.reloadButton.titleLabel.font.pointSize]];
     
@@ -233,12 +237,14 @@
     self.reloadButton.hidden = YES;
     self.urlFieldRightMargin.constant = 0;
     [textField selectAll:self];
+    self.urlFieldBg.backgroundColor = [UIColor colorWithHue:0 saturation:0 brightness:0.9 alpha:1];
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     self.reloadButton.hidden = NO;
     self.urlFieldRightMargin.constant = 30;
+    self.urlFieldBg.backgroundColor = self.urlFieldDefaultBgColor;
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
