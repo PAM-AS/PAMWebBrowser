@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
 # Source Info
   s.platform     =  :ios, '7.0'
-  s.source       =  {:git => 'https://github.com/PAM-AS/PAMWebBrowser.git', :tag => '0.1.23' }
+  s.source       =  {:git => 'https://github.com/PAM-AS/PAMWebBrowser.git', :tag => '0.1.24' }
   s.source_files = 'Classes/*.{h,m}'
   s.resources    = 'assets/*.storyboard' 
 
