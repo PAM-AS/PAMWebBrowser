@@ -29,13 +29,13 @@
                                     <constraint firstAttribute="height" constant="44" id="SNh-mR-usG"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem style="plain" id="Y9F-xq-XuX">
+                                    <barButtonItem width="44" style="plain" id="Y9F-xq-XuX">
                                         <view key="customView" contentMode="scaleToFill" id="5VR-6Q-CtE">
-                                            <rect key="frame" x="16" y="6" width="30" height="33"/>
+                                            <rect key="frame" x="16" y="6" width="44" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fP0-Hj-lHv">
-                                                    <rect key="frame" x="-10" y="11" width="36" height="30"/>
+                                                    <rect key="frame" x="0.0" y="11" width="44" height="30"/>
                                                     <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
                                                     <state key="normal" title="&lt;">
                                                         <color key="titleColor" red="0.42220336200000003" green="0.4221907258" blue="0.42219790820000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,13 +52,13 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" id="PQA-dA-v7c">
+                                    <barButtonItem width="44" style="plain" id="PQA-dA-v7c">
                                         <view key="customView" contentMode="scaleToFill" id="J41-4F-uYr">
-                                            <rect key="frame" x="56" y="6" width="30" height="33"/>
+                                            <rect key="frame" x="70" y="6" width="44" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcQ-HP-rXJ">
-                                                    <rect key="frame" x="-10" y="11" width="36" height="30"/>
+                                                    <rect key="frame" x="0.0" y="11" width="44" height="30"/>
                                                     <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
                                                     <state key="normal" title=">">
                                                         <color key="titleColor" red="0.42220336200000003" green="0.4221907258" blue="0.42219790820000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -78,7 +78,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="tU3-OV-RTj"/>
                                     <barButtonItem style="plain" id="Ztv-uF-in8">
                                         <view key="customView" contentMode="scaleToFill" id="VMC-zF-cl3">
-                                            <rect key="frame" x="108" y="6" width="580" height="33"/>
+                                            <rect key="frame" x="124" y="6" width="580" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BvU-Q3-wMV">
