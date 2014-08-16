@@ -31,6 +31,6 @@
  Progress helper, which reroutes the delegate a bit. 
  If you need to override the webview delegate, set the progressProcy.webViewProxyDelegate to self instead of webview.delegate.
  */
-@property (nonatomic, strong) NJKWebViewProgress *progressProcy;
+@property (nonatomic, strong) NJKWebViewProgress *progressProxy;
 
 @end

@@ -77,10 +77,10 @@
     }
     [self.webView.scrollView setScrollIndicatorInsets:self.webView.scrollView.contentInset];
     
-    self.progressProcy = [[NJKWebViewProgress alloc] init];
-    self.webView.delegate = self.progressProcy;
-    self.progressProcy.webViewProxyDelegate = self;
-    self.progressProcy.progressDelegate = self;
+    self.progressProxy = [[NJKWebViewProgress alloc] init];
+    self.webView.delegate = self.progressProxy;
+    self.progressProxy.webViewProxyDelegate = self;
+    self.progressProxy.progressDelegate = self;
 }
 
 - (void)didReceiveMemoryWarning
