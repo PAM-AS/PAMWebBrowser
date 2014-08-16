@@ -27,4 +27,10 @@
 @property (nonatomic, strong) NSDictionary *blockAlertData; // Available keys: title, message, cancelButton.
 @property (nonatomic, strong) NSURL *blockedURLFallback;
 
+/* NJKWebViewProgress
+ Progress helper, which reroutes the delegate a bit. 
+ If you need to override the webview delegate, set the progressProcy.webViewProxyDelegate to self instead of webview.delegate.
+ */
+@property (nonatomic, strong) NJKWebViewProgress *progressProcy;
+
 @end

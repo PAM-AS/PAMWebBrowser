@@ -30,7 +30,6 @@
 
 @property (nonatomic, strong) UIAlertView *alert;
 
-@property (nonatomic, strong) NJKWebViewProgress *progressProcy;
 @property (nonatomic, strong) IBOutlet NJKWebViewProgressView *progressView;
 
 @end
