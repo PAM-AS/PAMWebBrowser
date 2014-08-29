@@ -8,7 +8,6 @@
 
 #import "PAMWebBrowserViewController.h"
 #import "NSString+SAMAdditions.h"
-#import "NJKWebViewProgressView.h"
 
 @interface PAMWebBrowserViewController ()
 
@@ -29,8 +28,6 @@
 @property (nonatomic, strong) IBOutlet UIToolbar *bottomToolbar;
 
 @property (nonatomic, strong) UIAlertView *alert;
-
-@property (nonatomic, strong) IBOutlet NJKWebViewProgressView *progressView;
 
 @end
 
@@ -81,8 +78,6 @@
     self.webView.delegate = self.progressProxy;
     self.progressProxy.webViewProxyDelegate = self;
     self.progressProxy.progressDelegate = self;
-
-    self.progressView.progressBarView.backgroundColor = self.view.tintColor;
 }
 
 - (void)didReceiveMemoryWarning

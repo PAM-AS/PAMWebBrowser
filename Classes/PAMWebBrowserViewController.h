@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "NJKWebViewProgress.h"
+#import "NJKWebViewProgressView.h"
 
 @interface PAMWebBrowserViewController : UIViewController <UIWebViewDelegate, UITextFieldDelegate, NJKWebViewProgressDelegate>
 
@@ -32,5 +33,10 @@
  If you need to override the webview delegate, set the progressProcy.webViewProxyDelegate to self instead of webview.delegate.
  */
 @property (nonatomic, strong) NJKWebViewProgress *progressProxy;
+
+/* NJKWebViewProgressView
+ The progress bar view. Exposed for color overrides etc.
+ */
+@property (nonatomic, strong) IBOutlet NJKWebViewProgressView *progressView;
 
 @end
