@@ -8,6 +8,7 @@
 
 #import "PAMWebBrowserViewController.h"
 #import "NSString+SAMAdditions.h"
+#import "Reachability.h"
 
 @interface PAMWebBrowserViewController ()
 
@@ -221,6 +222,12 @@
 {
     if (error.code == NSURLErrorCancelled) // Something else than page not found.
         return;
+    
+    if (![[Reachability reachabilityForInternetConnection] isReachable])
+    {
+        // No network, no fun.
+        return;
+    }
     
     self.url = [self googleURLForString:self.urlField.text];
     NSURLRequest *request = [NSURLRequest requestWithURL:self.url];
