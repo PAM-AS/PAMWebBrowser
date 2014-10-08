@@ -4,10 +4,10 @@ PODS:
     - NJKWebViewProgress/ProgressView
   - NJKWebViewProgress/Core (0.2.3)
   - NJKWebViewProgress/ProgressView (0.2.3)
-  - PAMWebBrowser (0.1.22):
+  - PAMWebBrowser (0.1.30):
     - NJKWebViewProgress
     - SAMCategories
-  - SAMCategories (0.4.1)
+  - SAMCategories (0.5.2)
 
 DEPENDENCIES:
   - PAMWebBrowser (from `../`)
@@ -17,8 +17,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  NJKWebViewProgress: 2e7a17adf394a54b0203f544b354c2f1022eb651
-  PAMWebBrowser: 4d7fb839a344031ed96920c7620e9eb3efbc5972
-  SAMCategories: 141c86a5bf56165c9232fda04c88b547bc1ad2b9
+  NJKWebViewProgress: 721b57080c840c76f70ff6c2dda4f836ee1b27c1
+  PAMWebBrowser: 7dc4a5eefde4b69e5f07c22cb93b7ffe1f7bf3bb
+  SAMCategories: dc26f9dc67d371d22f391ee2173bc607a887912e
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.34.1

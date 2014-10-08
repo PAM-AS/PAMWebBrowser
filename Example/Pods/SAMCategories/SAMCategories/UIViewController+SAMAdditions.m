@@ -28,4 +28,14 @@
 	[alert show];
 }
 
+
+- (UIViewController *)sam_firstParentViewControllerOfClass:(Class)klass {
+    for (UIViewController *controller = self.parentViewController; controller != nil; controller = controller.parentViewController) {
+		if ([controller isKindOfClass:klass]) {
+			return controller;
+		}
+	}
+	return nil;
+}
+
 @end

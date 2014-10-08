@@ -12,8 +12,8 @@
 @implementation UIView (SAMAdditions)
 
 - (UIImage *)sam_imageRepresentation {
-	UIGraphicsBeginImageContext(self.bounds.size);
-	[self.layer renderInContext:UIGraphicsGetCurrentContext()];
+	UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, 0.0f);
+	[self drawViewHierarchyInRect:self.bounds afterScreenUpdates:NO];
 	UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
 	UIGraphicsEndImageContext();
 	return image;
@@ -86,6 +86,12 @@
 - (CGPoint)sam_trueCenter {
     UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
     return UIInterfaceOrientationIsLandscape(orientation) ? CGPointMake(self.center.y, self.center.x) : self.center;
+}
+
+
+- (void)sam_resetConstraints {
+	[self removeConstraints:[self constraints]];
+	[self setNeedsUpdateConstraints];
 }
 
 @end

@@ -1,5 +1,0 @@
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/NJKWebViewProgress" "${PODS_ROOT}/Headers/PAMWebBrowser" "${PODS_ROOT}/Headers/SAMCategories"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/NJKWebViewProgress" -isystem "${PODS_ROOT}/Headers/PAMWebBrowser" -isystem "${PODS_ROOT}/Headers/SAMCategories"
-OTHER_LDFLAGS = -ObjC -framework CoreGraphics -framework QuartzCore -framework UIKit
-PODS_ROOT = ${SRCROOT}/Pods
