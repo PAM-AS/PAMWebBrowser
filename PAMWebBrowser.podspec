@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'PAMWebBrowser'
-  s.version      = '0.2.0'
+  s.version      = '0.2.1'
   s.license      =  'MIT'
   s.homepage     = 'https://github.com/PAM-AS/PAMWebBrowser'
   s.authors      =  {'Thomas S. Nielsen' => 'thomas@pam.no'}
@@ -19,5 +19,6 @@ Pod::Spec.new do |s|
 
   s.dependency 'SAMCategories'
   s.dependency 'NJKWebViewProgress'
+  s.dependency 'Reachability'
   
 end
